@@ -1,10 +1,8 @@
 const Title = () => {
   return (
-    <>
-      <div>
-        <h1>Fullstack Contact Form</h1>
-      </div>
-    </>
+    <div className="title-wrapper">
+      <h1>Fullstack Contact Form</h1>
+    </div>
   );
 };
 

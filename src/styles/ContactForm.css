@@ -1,0 +1,48 @@
+input[required] + label::after,
+textarea[required] + label::after {
+  content: "*Required";
+  color: red;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+
+  & form {
+    width: 100%;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+
+  & > * + * {
+    margin-top: 1rem;
+  }
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+
+  & > * {
+    width: 48%;
+  }
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+
+  & input {
+    height: 33px;
+  }
+
+  & textarea {
+    resize: none;
+  }
+}
